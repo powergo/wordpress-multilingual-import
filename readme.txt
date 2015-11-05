@@ -28,14 +28,23 @@ common across all languages.
 1. Upload the entire `multilingual-import` folder to the
     `/wp-content/plugins/` directory.
 2. Activate the plugin through the \'Plugins\' menu in WordPress.
-3. Declare two constants in wp-config.php to specify the meta fields
-    containing the language and the common identifier:
+3. When creating an import, specify in the Entry Language field the column
+    where the language of the row is, then specify in the Common ID field the
+    column where the id common to all translated rows is.
 
-`define('WP_ALL_IMPORT_WPML_LANGUAGE_META', 'language');`
+== Screenshots ==
 
-`define('WP_ALL_IMPORT_WPML_ID_META', 'common_id');`
+1. The section to fill when creating an import. The Entry Language is the
+column where the language of the row is specified. The Common ID is the column
+where the id common to all translated rows is specified.
 
 == Changelog ==
+= 1.0.2 =
+
+* release date: November 5th 2015
+* Now being released as a wp all import addon so that import of taxonomies and
+  slugs can be correctly imported in the appropriate language.
+
 = 1.0.1 =
 
 * release date: October 29th 2015
